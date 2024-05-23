@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login form</title>
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Teachers:ital,wght@0,400..800;1,400..800&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap");
+
+    * {
+      padding: 0%;
+      margin: 0%;
+      box-sizing: border-box;
+      outline: 0;
+      text-decoration: none;
+      border: none;
+    }
+
+    body {
+
+      background: linear-gradient(to right, rgb(118, 118, 196), #b8b9bb);
+      font-family: "Outfit", sans-serif;
+      font-weight: 600;
+    }
+    
+     .container {
+      width: 73%;
+     height: 413px;
+      margin: 59px auto;
+      border-radius: 20px;
+     background-color: rgb(220, 220, 217);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+
+
+    }
+
+    .container .image {
+      width: 48%;
+       display: inline-block;
+       position: relative;
+     
+
+    }
+
+    .container .image img {
+     
+      width: 100%;
+      height: 413px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+
+    .userform {
+      display: inline-block;
+      width: 50%;
+      position: relative;
+      bottom: 65px;
+      padding: 26px 70px 0px 70px;
+      background-color: rgb(220, 220, 217);
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      
+     
+       
+    }
+  .container #heading {
+      color: rgb(107, 107, 242);
+      padding: 15px 0 25px;
+      font-size: 35px;
+      font-weight: lighter;
+      margin-left: 109px;
+      display: inline-block;
+    }
+
+    .userinput input {
+      height: 35px;
+      width: 81%;
+      margin: 13px 3px 3px 12px;
+      padding: 22px;
+      border-radius: 7px;
+      display: inline-block;
+    }
+
+
+
+    .userinput input:hover {
+      border-bottom: 2px solid rgb(137, 137, 137);
+      background-color: whitesmoke;
+    }
+
+    .container .userinput i {
+      position: relative;
+      left: 39px;
+      color: rgb(84, 84, 240);
+
+    }
+
+    .userinput input::placeholder {
+      color: rgb(159, 164, 164);
+      font-size: 13px;
+      padding-left: 10px;
+    }
+
+    .container .checkbox {
+      font-size: 12px;
+      padding: 7px 0 10px 33px;
+      display: inline-block;
+    }
+
+    .container .checkbox #check {
+      height: 11px;
+      margin-right: 3px;
+    }
+
+   
+
+    .container .forgotclass #forgot {
+     
+      color: rgb(36, 36, 35);
+      display: inline-block;
+      font-size: 12px;
+    }
+
+    .container .forgotclass #forgot:hover {
+      color: black;
+      text-decoration: underline;
+    }
+
+    .container .login-button input {
+      height: 40px;
+      width: 81%;
+      margin: 13px 25px 0 30px;
+      border-radius: 7px;
+      padding: 22px;
+      padding-top: 12px;
+      font-size: 15px;
+      color: white;
+      background-color: rgb(107, 107, 242);
+      border: 1px solid rgb(235, 233, 233);
+      outline: none;
+      display: inline-block;
+    }
+
+    .container .login-button input:hover {
+      cursor: pointer;
+      opacity: 0.9;
+    }
+
+    .container .signup {
+
+      margin: 24px 0 30px 55px;
+      font-size: 12px;
+      color: rgb(36, 36, 35);
+      display: inline-block;
+    }
+
+    
+
+    .container .signup a:hover {
+      text-decoration: underline;
+      cursor: pointer;
+      color: rgb(13, 13, 243);
+    }
+  </style>
+</head> 
+
+<body>
+  <div class="container">
+    <!-- image  -->
+
+    <div class="image">
+      <img src="img.png" alt="girl with a headphone" />
+    </div>
+
+    <div class="userform">
+    
+      <!-- form starts from here -->
+      <form action="" method="post" target="_blank" style="width: 100%;">
+       <h3 id="heading">Login</h3>
+
+        <!-- user's input is starting from here -->
+         <div class="userinput">
+          <div class="username">
+            <i class="bx bx-user"></i>
+            <label id="uname"><input type="text" name="username" id="uname" placeholder="Username" required />
+            </label>
+          </div>
+          <div class="password">
+            <i class="bx bx-lock-alt"></i>
+            <label id="pword"><input type="password" name="password" id="pword" placeholder="Password" required />
+            </label>
+          </div>
+        </div> 
+        <!--checkbox of remember me and forgot password comes here -->
+
+         <div class="checkbox">
+          <label for="check" style="color: rgb(36, 36, 35);">
+            <input type="checkbox" name="checkbox" id="check" />Remember me
+          </label>
+        </div>
+        <div class="forgotclass" style="margin-left: 45px;display: inline-block;">
+          <a href="" id="forgot">Forgot password?</a>
+        </div> 
+
+        <!-- login button is designed here -->
+
+        <div class="login-button">
+          <input type="submit" value="Log in" />
+        </div>
+
+        <!-- signup-button -->
+
+        <div class="signup">
+          <p>Don't have an have an account? <a href="index.html" style="color: rgb(77, 95, 193);">Sign up</a></p>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</body>
+
+</html>
