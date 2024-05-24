@@ -11,7 +11,7 @@
 
         * {
             padding: 0%;
-            margin: 0%;
+            /* margin: 0%; */
             box-sizing: border-box;
             outline: 0;
             text-decoration: none;
@@ -24,26 +24,33 @@
         }
 
         .container {
-            width: 80%;
-            margin: 30px auto;
+            width: 83%;
+            margin: 2% auto;
             border-radius: 20px;
             background-color: white;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); */
             font-size: 12px;
 
         }
 
         .container .image {
-            width: 49%;
+            width: 50%;
             position: relative;
+            /* display: inline-block; */
+            float: left;
+
+        }
+        .pro-login
+        {
             display: inline-block;
+            height: 511px;
 
         }
 
         .container .image img {
 
             width: 100%;
-            height: 500px;
+            height: 511px;
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
         }
@@ -58,7 +65,7 @@
 
         .container .image span {
             position: absolute;
-            top: 43px;
+            top: 55px;
             left: 10px;
             color: rgba(7, 7, 179, 0.631);
             text-transform: capitalize;
@@ -66,18 +73,23 @@
         }
 
         .userform {
-            display: inline-block;
-            width: 50.2%;
+         
+            width: 50%;
             background: white;
-            padding: 28px 82px 0 51px;
+            padding: 0 28px;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
+
+        }
+        form{
+            width: 89%;
+    padding-left: 38px;
 
         }
 
         .userform #heading {
             color: rgb(107, 107, 242);
-            padding-bottom: 20px;
+            margin: 10px 0 10px 0;
             font-size: 25px;
             font-weight: lighter;
 
@@ -88,14 +100,31 @@
             border-radius: 7px;
             outline: none;
             border: 2px solid rgba(234, 233, 231, 0.842);
-            width: 92%;
-            margin-top: 5.5px;
+            width: 100%;
+            /* margin-top: 5.5px; */
             font-size: 12px;
+        }
+        .inputbox{
+            width: 100%;
+        }
+        .fname ,
+        .lname
+        {
+            width: 48%;
+
+        }
+        .fname
+        {
+            float: left;
+        }
+        .lname
+        {
+            float: right;
         }
 
         .container .userform .check p {
             display: inline-block;
-            padding: 12px 51px 4px 27px;
+            padding: 6px 51px 4px 27px;
             font-size: 12px;
         }
 
@@ -108,14 +137,14 @@
 
         .container .signup-button input {
             height: 30px;
-            width: 92%;
+            width: 100%;
             cursor: pointer;
             color: white;
             background-color: rgb(119, 145, 218);
             font-size: 13.8px;
             outline: none;
             border: none;
-            margin-top: 17px;
+            margin-top: 7px;
             border-radius: 7px;
 
         }
@@ -126,8 +155,8 @@
         }
 
         .userform .small {
-            margin-left: 9rem;
-            padding-top: 13px;
+            margin-left: 11rem;
+            padding-top: 4px;
             padding-bottom: 11px;
             font-size: 10px;
             display: inline-block;
@@ -187,7 +216,7 @@
         }
 
         .container .login p {
-            padding-left: 55px;
+            padding-left: 102px;
             padding-top: 10px;
         }
 
@@ -203,26 +232,26 @@
 <body>
     <div class="container">
         <!-- image -->
-        <div class="image">
+        <div class="image pro-login">
             <img src="img.png" alt="girl with a headphone">
 
             <p>Listen to your top musics</p>
             <span>for free</span>
         </div>
-        <div class="userform">
-            <form action="noaction.php" style="width: 90%;">
+        <div class="userform pro-login">
+            <form action="noaction.php">
 
                 <h3 id="heading">Sign Up</h3>
                 <!-- form starts from here -->
 
 
-                <div class="inputbox" style="width: 45%;display: inline-block;">
+                <div class="inputbox fname">
                     <div class="firstname">
                         <p style=" margin-top: 7px;">First Name</p>
                         <input type="text" name="firstname" id="fname" required style=" width: 98%;">
                     </div>
                 </div>
-                <div class="inputbox" style="width: 45%;display: inline-block;margin-left: 5px;">
+                <div class="inputbox lname">
                     <div class="lastname">
                         <p style=" margin-top: 7px;">Last Name</p>
                         <input type="text" name="lastname" id="lname" required style="  width: 98%;">
@@ -265,7 +294,7 @@
 
                 <!-- google and facebook signup options -->
 
-                <div class="website">
+                <div class="website" style="padding-left:46px ;">
                     <div class="googleicon">
                         <img src="google.png" alt="google icon">
                         <input type="button" value="Sign up with Google">
